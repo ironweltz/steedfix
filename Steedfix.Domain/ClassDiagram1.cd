@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Steedfix.Domain.Comment" Collapsed="true">
+    <Position X="1.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Comment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Steedfix.Domain.EntityBase" Collapsed="true">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAABAAgAAAAAAAAA=</HashCode>
+      <FileName>EntityBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Steedfix.Domain.Image" Collapsed="true">
+    <Position X="14" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAABAAAAAAAAAAAAAAAAAAQAABAAAA=</HashCode>
+      <FileName>Image.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Steedfix.Domain.Job">
+    <Position X="18.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAgAEAAAhAAAAAAAAAAAFACQAAAAAAAIAA=</HashCode>
+      <FileName>Job.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Steedfix.Domain.JobComment" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>JobComment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Steedfix.Domain.JobLike" Collapsed="true">
+    <Position X="20.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>JobLike.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Steedfix.Domain.JobRating" Collapsed="true">
+    <Position X="9.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>JobRating.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Steedfix.Domain.JobTag" Collapsed="true">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>JobTag.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Steedfix.Domain.Like" Collapsed="true">
+    <Position X="20.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Like.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Steedfix.Domain.Manufacturer" Collapsed="true">
+    <Position X="25.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Manufacturer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Steedfix.Domain.Part" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAgAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Part.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Steedfix.Domain.Rating" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Rating.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Steedfix.Domain.Steed" Collapsed="true">
+    <Position X="16.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAABAAAAEAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Steed.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Steedfix.Domain.Step" Collapsed="true">
+    <Position X="23" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAgAEAAAAAAAAAAAAACABAAAAAAAAAAIAA=</HashCode>
+      <FileName>Step.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Steedfix.Domain.StepComment" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>StepComment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Steedfix.Domain.Tag" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tag.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Steedfix.Domain.Tool" Collapsed="true">
+    <Position X="11.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Steedfix.Domain.User" Collapsed="true">
+    <Position X="27.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAACAAAAEAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
