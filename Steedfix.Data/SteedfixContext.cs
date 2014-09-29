@@ -82,6 +82,6 @@ namespace Steedfix.Data
         public DbSet<Tag> Tags { get; set; }
         public DbSet<Tool> Tools { get; set; }
 
-
+        
     }
 }

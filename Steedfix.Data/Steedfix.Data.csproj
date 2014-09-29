@@ -50,6 +50,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -60,6 +61,8 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SteedfixContext.cs" />
+    <Compile Include="Utils\IdentityUtil.cs" />
+    <Compile Include="Utils\ImageUtil.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Steedfix.Domain\Steedfix.Domain.csproj">
@@ -69,10 +72,46 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="CodeTemplates\Scaffolders\DbContextScaffolder\DbContext.cs.t4" />
+    <None Include="CodeTemplates\Scaffolders\DbContextScaffolder\DbContextEntityMember.cs.t4" />
+    <None Include="CodeTemplates\Scaffolders\DbContextScaffolder\DbContextScaffolder.ps1" />
+    <None Include="CodeTemplates\Scaffolders\RepositoryInterfaceScaffolder\RepositoryInterfaceScaffolder.cs.t4" />
+    <None Include="CodeTemplates\Scaffolders\RepositoryInterfaceScaffolder\RepositoryInterfaceScaffolder.ps1" />
+    <None Include="CodeTemplates\Scaffolders\RepositoryScaffolder\Repository.cs.t4" />
+    <None Include="CodeTemplates\Scaffolders\RepositoryScaffolder\RepositoryScaffolder.ps1" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="SeedImages\" />
+    <Content Include="SeedImages\Small\back-off-patch.jpg" />
+    <Content Include="SeedImages\Small\chalk-on-tube.jpg" />
+    <Content Include="SeedImages\Small\close-cantilever.jpg" />
+    <Content Include="SeedImages\Small\font-wheel-flat-tyre.jpg" />
+    <Content Include="SeedImages\Small\glue-on-tube.jpg" />
+    <Content Include="SeedImages\Small\inflate-tube.jpg" />
+    <Content Include="SeedImages\Small\inflate-tyre.jpg" />
+    <Content Include="SeedImages\Small\lever-in-tyre-clipped.jpg" />
+    <Content Include="SeedImages\Small\lever-off-tyre.jpg" />
+    <Content Include="SeedImages\Small\lever-tyre-rim.jpg" />
+    <Content Include="SeedImages\Small\patch-on-tube.jpg" />
+    <Content Include="SeedImages\Small\pull-tube-from-tyre.jpg" />
+    <Content Include="SeedImages\Small\puncture-fixed.jpg" />
+    <Content Include="SeedImages\Small\puncture-repair-tools.jpg" />
+    <Content Include="SeedImages\Small\rear-wheel-flat-tyre.jpg" />
+    <Content Include="SeedImages\Small\sand-tube.jpg" />
+    <Content Include="SeedImages\Small\stand-bike-up-on-fork.jpg" />
+    <Content Include="SeedImages\Small\thorn-in-pliers.jpg" />
+    <Content Include="SeedImages\Small\thorn-in-tyre.jpg" />
+    <Content Include="SeedImages\Small\tube-in-water-bubble.jpg" />
+    <Content Include="SeedImages\Small\two-levers-in-tyre.jpg" />
+    <Content Include="SeedImages\Small\tyre-off-rim-by-hand.jpg" />
+    <Content Include="SeedImages\Small\undo-cantilever-brakes.jpg" />
+    <Content Include="SeedImages\Small\undo-skewer.jpg" />
+    <Content Include="SeedImages\Small\valve-close-up.jpg" />
+    <Content Include="SeedImages\Small\valve-in-rim-first.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+    <Folder Include="Repositories\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
