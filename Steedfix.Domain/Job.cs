@@ -28,14 +28,9 @@ namespace Steedfix.Domain
         public virtual ICollection<Tag> Tags { get; set; }
 
         /// <summary>
-        /// Has a many-to-many table JobTools
+        /// Has a many-to-many table JobItems
         /// </summary>
-        public virtual ICollection<Tool> Tools { get; set; }
-
-        /// <summary>
-        /// Has a many-to-many table JobParts
-        /// </summary>
-        public virtual ICollection<Part> Parts { get; set; }
+        public virtual ICollection<Item> Items { get; set; }
 
         public virtual ICollection<JobLike> Likes { get; set; }
 

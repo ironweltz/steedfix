@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -19,5 +20,7 @@ namespace Steedfix.Domain
 
         [ForeignKey("ManufacturerId")]
         public Manufacturer Manufacturer { get; set; }
+
+        public virtual ICollection<Job> Jobs { get; set; }
     }
 }

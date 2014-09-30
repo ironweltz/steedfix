@@ -41,28 +41,21 @@ namespace Steedfix.Data
                     .ToTable("JobTags"));
 
             modelBuilder.Entity<Job>()
-                .HasMany(j => j.Parts)
-                .WithMany(t => t.Jobs)
+                .HasMany(j => j.Items)
+                .WithMany(i => i.Jobs)
                 .Map(j => j.MapRightKey("JobId")
-                    .MapLeftKey("PartId")
-                    .ToTable("JobParts"));
-
-            modelBuilder.Entity<Job>()
-                .HasMany(j => j.Tools)
-                .WithMany(t => t.Jobs)
-                .Map(j => j.MapRightKey("JobId")
-                    .MapLeftKey("ToolId")
-                    .ToTable("JobTools"));
+                    .MapLeftKey("ItemId")
+                    .ToTable("JobItems"));
 
             modelBuilder.Entity<Bike>()
-                .HasMany(j => j.Images)
-                .WithMany(t => t.Bikes)
-                .Map(j => j.MapRightKey("BikeId")
+                .HasMany(b => b.Images)
+                .WithMany(i => i.Bikes)
+                .Map(b => b.MapRightKey("BikeId")
                     .MapLeftKey("ImageId")
                     .ToTable("BikeImages"));
 
             modelBuilder.Entity<Bike>()
-                .HasMany(j => j.Tags)
+                .HasMany(b => b.Tags)
                 .WithMany(t => t.Bikes)
                 .Map(j => j.MapRightKey("BikeId")
                     .MapLeftKey("TagId")
@@ -73,14 +66,15 @@ namespace Steedfix.Data
         public DbSet<Bike> Bikes { get; set; }
         public DbSet<Comment> Comments { get; set; }
         public DbSet<Image> Images { get; set; }
+        public DbSet<Item> Items { get; set; }
         public DbSet<Job> Jobs { get; set; }
         public DbSet<Like> Likes { get; set; }
         public DbSet<Manufacturer> Manufacturers { get; set; }
-        public DbSet<Part> Parts { get; set; }
+        //public DbSet<Part> Parts { get; set; }
         public DbSet<Rating> Ratings { get; set; }
         public DbSet<Step> Steps { get; set; }
         public DbSet<Tag> Tags { get; set; }
-        public DbSet<Tool> Tools { get; set; }
+        //public DbSet<Tool> Tools { get; set; }
 
         
     }

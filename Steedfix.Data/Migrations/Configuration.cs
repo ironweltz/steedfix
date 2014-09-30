@@ -31,17 +31,19 @@ namespace Steedfix.Data.Migrations
             //Create some users
             var identityUtil = new IdentityUtil(context);
             identityUtil.SeedUsers(SteedfixAdmin);
-
+            context.SaveChanges();
             var adminUserId = identityUtil.GetUserId(SteedfixAdmin);
 
             //Create some images
             var imageUtil = new ImageUtil();
             imageUtil.SeedImages(context, adminUserId);
-
+            context.SaveChanges();
             SeedManufacturers(context, adminUserId);
-            SeedTools(context, adminUserId);
-            SeedParts(context, adminUserId);
+            context.SaveChanges();
+            SeedItems(context, adminUserId);
+            context.SaveChanges();
             SeedJobs(context, adminUserId);
+            context.SaveChanges();
         }
 
         private void SeedJobs(SteedfixContext context, string createdByUserId)
@@ -58,8 +60,7 @@ namespace Steedfix.Data.Migrations
                     Title = "Fix a front wheel puncture",
                     Description = "Detailed steps showing how to fix a front wheel puncture",
                     ImageId = context.Images.Single(i => i.FileName.Equals("font-wheel-flat-tyre.jpg")).Id,
-                    Parts = context.Parts.ToList(),
-                    Tools = context.Tools.ToList(),
+                    //Items = context.Items.ToList(),
                     Comments = new Collection<JobComment>()
                     {
                         new JobComment(){CreatedByUserId = brad,Description = "This is a really good procedure for fixing a puncture."},
@@ -270,13 +271,13 @@ namespace Steedfix.Data.Migrations
         }
 
         /// <summary>
-        /// Create some tools
+        /// Create some items
         /// </summary>
         /// <param name="context"></param>
         /// <param name="createdbyUserId"></param>
-        private void SeedTools(SteedfixContext context, string createdbyUserId)
+        private void SeedItems(SteedfixContext context, string createdbyUserId)
         {
-            context.Tools.AddOrUpdate(t => t.Title,
+            context.Items.AddOrUpdate(t => t.Title,
                 new Tool()
                 {
                     CreatedByUserId = createdbyUserId,
@@ -304,18 +305,7 @@ namespace Steedfix.Data.Migrations
                     Title = "Small Towel",
                     Ref = "",
                     ManufacturerId = context.Manufacturers.Single(m => m.Name.Equals("Generic")).Id
-                }
-                );
-        }
-
-        /// <summary>
-        /// Create some parts
-        /// </summary>
-        /// <param name="context"></param>
-        /// <param name="createdbyUserId"></param>
-        private void SeedParts(SteedfixContext context, string createdbyUserId)
-        {
-            context.Parts.AddOrUpdate(p => p.Title,
+                }, 
                 new Part()
                 {
                     CreatedByUserId = createdbyUserId,
@@ -329,7 +319,8 @@ namespace Steedfix.Data.Migrations
                     Title = "Park Tool Super Patch Kit ",
                     Ref = "GP-2",
                     ManufacturerId = context.Manufacturers.Single(m => m.Name.Equals("Park Tool")).Id
-                });
+                }
+                );
         }
     }
 }
